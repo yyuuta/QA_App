@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             // ログイン済みのユーザーを取得する
             val user = FirebaseAuth.getInstance().currentUser
 
-            // ログインしていなければログイン画面に遷移させる
+            /* ログインしていなければログイン画面に遷移させる */
             if (user == null) {
                 val intent = Intent(applicationContext, LoginActivity::class.java)
                 startActivity(intent)
